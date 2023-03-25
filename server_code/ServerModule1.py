@@ -25,12 +25,12 @@ def export_to_excel():
      all_change_notes= app_tables.change_notes.search()
  
 # For each row, pull out only the data we want to put into pandas
-     dicts = [{ 'title': r['title']}#, 'change_date': r['change_date']}
+     dicts = [{'new_change_note_id': r['new_change_note_id'], 'title': r['title']}#, 'change_date': r['change_date']}
          for r in all_change_notes]
-#'new_change_note_id': r['new_change_note_id'],
+#'],
      df = pd.DataFrame.from_dict(dicts)
      # df = pd.DataFrame(data, columns=columns)
      content = io.BytesIO()
      df.to_excel(content, index=False)
      content.seek(0, 0)
-     return anvil.BlobMedia(content=content.read(), content_type="application/vnd.ms-excel")
+     return anvil.BlobMedia(content=content.read(), content_type="application/vnd.ms-excel" , name = 'Change_note.xlsx')
