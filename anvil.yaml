@@ -1,5 +1,65 @@
-allow_embedding: false
+scheduled_tasks: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/google.yml
+  client_config:
+    app_files:
+    - capabilities: {canEdit: true, canCopy: false}
+      editable: true
+      copyable: false
+      embedLink: https://drive.google.com/embeddedfolderview?id=1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6
+      copyRequiresWriterPermission: false
+      python_name: change_notes
+      explicitlyTrashed: false
+      lastModifyingUser:
+        displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: '10976438867099535844'
+        emailAddress: sydney.w.stewart@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/AGNmyxbbjPeCiv5xULpWu0j31Q31SL3XjVyi6YjY7Hbu_Q=s64'}
+      shared: false
+      createdDate: '2023-03-26T09:01:12.448Z'
+      id: 1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6
+      owners:
+      - displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: '10976438867099535844'
+        emailAddress: sydney.w.stewart@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/AGNmyxbbjPeCiv5xULpWu0j31Q31SL3XjVyi6YjY7Hbu_Q=s64'}
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6/parents/0AC3uEse42l11Uk9PVA',
+        id: 0AC3uEse42l11Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AC3uEse42l11Uk9PVA'}
+      labels: {viewed: false, restricted: false, starred: false, hidden: false, trashed: false}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
+      selfLink: https://www.googleapis.com/drive/v2/files/1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6/permissions/me',
+        etag: '"jcVnbqUgoOvRE2KtwOJde4wZ5ZI"', pendingOwner: false}
+      lastModifyingUserName: Syd Stewart
+      etag: '"MTY3OTgyMTI3MjQ0OA"'
+      kind: drive#file
+      modifiedByMeDate: '2023-03-26T09:01:12.448Z'
+      title: Change Notes
+      version: '1'
+      appDataContents: false
+      writersCanShare: true
+      alternateLink: https://drive.google.com/drive/folders/1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6
+      mimeType: application/vnd.google-apps.folder
+      modifiedDate: '2023-03-26T09:01:12.448Z'
+      quotaBytesUsed: '0'
+      ownerNames: [Syd Stewart]
+  server_config: {enc_delegation_refresh_token: NOanbJ1lopm997rFPHQ6N8teK8aCh95H1Bww8pld+CsLGsdZ7rYvSiu/M9GFod8PKrhgZXLvcegelXhN/78voHOWmCiwb2FQhoT1zi16jD46lAgdlI+oOpdyjw9wzLKF8glWGFmtXw3yClP3oKl93fPyxA4DoqIuQe93UHGHZChrmFOjivgQKGr3NcDsWFnHWnOnXHGHhg93UVvvrJLG/GGaVeJV7/VwF+J8R1T2sdefHCfdq5ktLXKlxyGJSuVv4FBSkb2ms+5CWfPkYmkcc5SOy8niZs/x7tX/xfuCEfndeXs3kWHaX36Od4No3w==}
 package_name: Backup_Change_Notes
+allow_embedding: false
+name: Backup Change Notes
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+metadata: {title: Backup Change Notes}
+startup_form: Form1
 db_schema:
   users:
     title: Users
@@ -167,11 +227,3 @@ db_schema:
     - name: due_date
       admin_ui: {width: 200}
       type: datetime
-name: Backup Change Notes
-startup_form: Form1
-runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-metadata: {title: Backup Change Notes}
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {}
