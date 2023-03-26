@@ -20,14 +20,6 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    today = datetime.now() 
-    change_note_csv, change_note_audit_csv, users_csv = anvil.server.call("export_to_csv")  
+    anvil.server.call("export_to_csv")  
 
-    folder = app_files.change_notes
-    filename = 'change_note' + '_' +str(today)+' .csv'
-    filename1 = 'change_note_audit' + '_' +str(today)+' .csv'
-    filename2 = 'users' + '_' +str(today)+' .csv'
-    new_file = folder.create_file(filename, change_note_csv)
-    new_file1 = folder.create_file(filename1, change_note_audit_csv )
-    new_file2 = folder.create_file(filename2, users_csv)
-    
+

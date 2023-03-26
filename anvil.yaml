@@ -1,4 +1,10 @@
-scheduled_tasks: []
+scheduled_tasks:
+- task_name: make_backup
+  time_spec:
+    n: 1
+    every: day
+    at: {minute: 0, hour: 19}
+  job_id: CSEAIMCX
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
@@ -9,51 +15,100 @@ services:
     - capabilities: {canEdit: true, canCopy: false}
       editable: true
       copyable: false
-      embedLink: https://drive.google.com/embeddedfolderview?id=1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6
+      embedLink: https://drive.google.com/embeddedfolderview?id=1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
       copyRequiresWriterPermission: false
-      python_name: change_notes
+      python_name: change_note_system_tables_backup
       explicitlyTrashed: false
       lastModifyingUser:
         displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: '10976438867099535844'
-        emailAddress: sydney.w.stewart@gmail.com
-        picture: {url: 'https://lh3.googleusercontent.com/a/AGNmyxbbjPeCiv5xULpWu0j31Q31SL3XjVyi6YjY7Hbu_Q=s64'}
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       shared: false
-      createdDate: '2023-03-26T09:01:12.448Z'
-      id: 1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6
+      createdDate: '2023-03-26T15:20:23.183Z'
+      id: 1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
       owners:
       - displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: '10976438867099535844'
-        emailAddress: sydney.w.stewart@gmail.com
-        picture: {url: 'https://lh3.googleusercontent.com/a/AGNmyxbbjPeCiv5xULpWu0j31Q31SL3XjVyi6YjY7Hbu_Q=s64'}
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
       spaces: [drive]
       parents:
-      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6/parents/0AC3uEse42l11Uk9PVA',
-        id: 0AC3uEse42l11Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AC3uEse42l11Uk9PVA'}
-      labels: {viewed: false, restricted: false, starred: false, hidden: false, trashed: false}
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R/parents/0AFZ846S7fbL-Uk9PVA',
+        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
       iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
-      selfLink: https://www.googleapis.com/drive/v2/files/1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6
-      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6/permissions/me',
-        etag: '"jcVnbqUgoOvRE2KtwOJde4wZ5ZI"', pendingOwner: false}
+      selfLink: https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
+      lastViewedByMeDate: '2023-03-26T15:20:23.183Z'
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R/permissions/me',
+        etag: '"lmHYE6ERLFL5nRZJAp5G9C8o20E"', pendingOwner: false}
       lastModifyingUserName: Syd Stewart
-      etag: '"MTY3OTgyMTI3MjQ0OA"'
+      etag: '"MTY3OTg0NDAyMzE4Mw"'
       kind: drive#file
-      modifiedByMeDate: '2023-03-26T09:01:12.448Z'
-      title: Change Notes
+      modifiedByMeDate: '2023-03-26T15:20:23.183Z'
+      title: change_note_system_tables_backup
       version: '1'
       appDataContents: false
       writersCanShare: true
-      alternateLink: https://drive.google.com/drive/folders/1qsSLYoGbYeMIn-sPGrPLo0yticaStvq6
+      alternateLink: https://drive.google.com/drive/folders/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
       mimeType: application/vnd.google-apps.folder
-      modifiedDate: '2023-03-26T09:01:12.448Z'
+      modifiedDate: '2023-03-26T15:20:23.183Z'
       quotaBytesUsed: '0'
       ownerNames: [Syd Stewart]
-  server_config: {enc_delegation_refresh_token: NOanbJ1lopm997rFPHQ6N8teK8aCh95H1Bww8pld+CsLGsdZ7rYvSiu/M9GFod8PKrhgZXLvcegelXhN/78voHOWmCiwb2FQhoT1zi16jD46lAgdlI+oOpdyjw9wzLKF8glWGFmtXw3yClP3oKl93fPyxA4DoqIuQe93UHGHZChrmFOjivgQKGr3NcDsWFnHWnOnXHGHhg93UVvvrJLG/GGaVeJV7/VwF+J8R1T2sdefHCfdq5ktLXKlxyGJSuVv4FBSkb2ms+5CWfPkYmkcc5SOy8niZs/x7tX/xfuCEfndeXs3kWHaX36Od4No3w==}
+    - capabilities: {canEdit: true, canCopy: false}
+      editable: true
+      copyable: false
+      embedLink: https://drive.google.com/embeddedfolderview?id=14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
+      copyRequiresWriterPermission: false
+      python_name: spc_support_system_backup
+      explicitlyTrashed: false
+      lastModifyingUser:
+        displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      shared: false
+      createdDate: '2023-03-26T15:27:04.141Z'
+      id: 14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
+      owners:
+      - displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-/parents/0AFZ846S7fbL-Uk9PVA',
+        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
+      selfLink: https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
+      lastViewedByMeDate: '2023-03-26T15:27:04.141Z'
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-/permissions/me',
+        etag: '"RCXxeVOMaWhyXLRZ_nqSYC5jWcU"', pendingOwner: false}
+      lastModifyingUserName: Syd Stewart
+      etag: '"MTY3OTg0NDQyNDE0MQ"'
+      kind: drive#file
+      modifiedByMeDate: '2023-03-26T15:27:04.141Z'
+      title: spc_support_system_backup
+      version: '1'
+      appDataContents: false
+      writersCanShare: true
+      alternateLink: https://drive.google.com/drive/folders/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
+      mimeType: application/vnd.google-apps.folder
+      modifiedDate: '2023-03-26T15:27:04.141Z'
+      quotaBytesUsed: '0'
+      ownerNames: [Syd Stewart]
+  server_config: {enc_delegation_refresh_token: vjlfPMkXam7ClKrdd85GuvCVW9fhYnGc2r6io+UFbeoc3pmNcAGFqoxRmsh0y2cCYg6pfGo0VvzlKh6Cl/5x3SW4fQmUIzLatBHbCp9EvyrVg+KFdiSVpiTPdLWc2Rn3WJnD1bCMbDcMxK+Vj90Z9cqukaCfrePqUYLT2j558W/KtbKcNB8yjgj0INie+QvZPDz3b7f3TxMomLrVBF5YtYNiklmPUgNGB6GW8FoW5pOxvekGvc209D00i2Mz9r9hq3DthEmvNPvtmoouXbXJikso5M4ZLceUAEzYaNo84Jr9ws3fe7ge3RQ+01jV9w==}
 package_name: Backup_Change_Notes
 allow_embedding: false
 name: Backup Change Notes
@@ -227,3 +282,251 @@ db_schema:
     - name: due_date
       admin_ui: {width: 200}
       type: datetime
+  suppported_products:
+    title: suppported_products
+    client: none
+    server: full
+    columns:
+    - name: Name
+      admin_ui: {width: 200}
+      type: string
+    - name: Account
+      admin_ui: {width: 200}
+      type: string
+    - name: 4S_Country
+      admin_ui: {width: 200}
+      type: string
+    - name: CFApplicationArea
+      admin_ui: {width: 200}
+      type: string
+    - name: InUseStatus
+      admin_ui: {width: 200}
+      type: string
+    - name: Shipping_Address_Country
+      admin_ui: {width: 200}
+      type: string
+    - name: Location_c
+      admin_ui: {width: 200}
+      type: string
+    - name: longitude
+      admin_ui: {width: 200}
+      type: number
+    - name: latitude
+      admin_ui: {width: 200}
+      type: number
+    - name: Account_id
+      admin_ui: {width: 200}
+      type: string
+    - name: System_id
+      admin_ui: {width: 200}
+      type: string
+    - name: Live_version_no
+      admin_ui: {width: 200}
+      type: string
+    - name: Version_Level
+      admin_ui: {width: 200}
+      type: string
+    - name: Customer_Type
+      admin_ui: {width: 200}
+      type: string
+    - name: Interfaces
+      admin_ui: {width: 574.181818}
+      type: string
+    - name: Inbound_INR
+      admin_ui: {width: 200}
+      type: string
+    - name: Bidirectional_SystmOne
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_ADT
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_Demographics
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_Medications
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Billing
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Dosing
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_PDF
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Query
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_TestResults
+      admin_ui: {width: 200}
+      type: string
+    - name: Bidirectional_Telehealth
+      admin_ui: {width: 200}
+      type: string
+    - name: AC_Non_AC
+      admin_ui: {width: 200}
+      type: string
+    - name: Operating_System
+      admin_ui: {width: 200}
+      type: string
+    - name: Database_Version
+      admin_ui: {width: 250.01136400000001}
+      type: string
+    - name: Remote_Access_Available
+      admin_ui: {width: 200}
+      type: string
+    - name: appareas
+      admin_ui: {width: 200}
+      type: string
+  functions:
+    title: functions
+    client: none
+    server: full
+    columns:
+    - name: function
+      admin_ui: {width: 200}
+      type: string
+  change_notes_audit:
+    title: change_notes_audit
+    client: none
+    server: full
+    columns:
+    - name: description
+      admin_ui: {width: 200}
+      type: string
+    - name: reported_by_customer
+      admin_ui: {width: 200}
+      type: string
+    - name: found _in_version_no
+      admin_ui: {width: 200}
+      type: string
+    - name: possible_solution
+      admin_ui: {width: 200}
+      type: string
+    - name: stage
+      admin_ui: {width: 200}
+      type: string
+    - name: created_by_firstname
+      admin_ui: {width: 200}
+      type: string
+    - name: ips
+      admin_ui: {width: 200}
+      type: number
+    - name: difficulty
+      admin_ui: {width: 200}
+      type: number
+    - name: pick
+      admin_ui: {width: 200}
+      type: string
+    - name: due_date
+      admin_ui: {width: 200}
+      type: datetime
+    - name: created_by_lastname
+      admin_ui: {width: 200}
+      type: string
+    - name: investigator
+      admin_ui: {width: 200}
+      type: string
+    - name: product_area
+      admin_ui: {width: 200}
+      type: string
+    - name: type
+      admin_ui: {width: 200}
+      type: string
+    - name: probability
+      admin_ui: {width: 200}
+      type: number
+    - name: function
+      admin_ui: {width: 200}
+      type: string
+    - name: title
+      admin_ui: {width: 200}
+      type: string
+    - name: rpn
+      admin_ui: {width: 200}
+      type: number
+    - name: worst_case
+      admin_ui: {width: 200}
+      type: string
+    - name: change_note_id
+      admin_ui: {width: 200}
+      type: string
+    - name: priority
+      admin_ui: {width: 200}
+      type: string
+    - name: status
+      admin_ui: {width: 200}
+      type: string
+    - name: payoff
+      admin_ui: {width: 200}
+      type: number
+    - name: severity
+      admin_ui: {width: 200}
+      type: number
+    - name: released_in_version
+      admin_ui: {width: 200}
+      type: string
+    - name: mitigations
+      admin_ui: {width: 200}
+      type: string
+    - name: progress
+      admin_ui: {width: 200}
+      type: number
+    - name: pick_note
+      admin_ui: {width: 200}
+      type: string
+    - name: assigned_to
+      admin_ui: {width: 200}
+      type: string
+    - name: user
+      admin_ui: {width: 200}
+      type: string
+    - name: visibility
+      admin_ui: {width: 200}
+      type: number
+    - name: change_date
+      admin_ui: {width: 317.181818}
+      type: datetime
+    - name: classid
+      admin_ui: {width: 200}
+      type: string
+    - name: change_search_date
+      admin_ui: {width: 200}
+      type: datetime
+    - name: found_in_last_two_years
+      admin_ui: {width: 200}
+      type: bool
+    - name: 'rpn '
+      admin_ui: {width: 200}
+      type: number
+    - name: user_changed
+      admin_ui: {width: 200}
+      type: string
+    - name: when_changed
+      admin_ui: {width: 200}
+      type: datetime
+    - name: tags
+      admin_ui: {width: 200}
+      type: string
+    - name: year_month
+      admin_ui: {width: 200}
+      type: string
+    - name: assigned_to
+      admin_ui: {width: 200}
+      type: string
+    - name: new_change_note_id
+      admin_ui: {width: 200}
+      type: string
+    - name: found_in_version_no
+      admin_ui: {width: 200}
+      type: string
+  change_id_counter:
+    title: change_id_counter
+    client: none
+    server: full
+    columns:
+    - name: counter
+      admin_ui: {width: 200}
+      type: number
