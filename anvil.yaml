@@ -109,6 +109,9 @@ services:
       quotaBytesUsed: '0'
       ownerNames: [Syd Stewart]
   server_config: {enc_delegation_refresh_token: vjlfPMkXam7ClKrdd85GuvCVW9fhYnGc2r6io+UFbeoc3pmNcAGFqoxRmsh0y2cCYg6pfGo0VvzlKh6Cl/5x3SW4fQmUIzLatBHbCp9EvyrVg+KFdiSVpiTPdLWc2Rn3WJnD1bCMbDcMxK+Vj90Z9cqukaCfrePqUYLT2j558W/KtbKcNB8yjgj0INie+QvZPDz3b7f3TxMomLrVBF5YtYNiklmPUgNGB6GW8FoW5pOxvekGvc209D00i2Mz9r9hq3DthEmvNPvtmoouXbXJikso5M4ZLceUAEzYaNo84Jr9ws3fe7ge3RQ+01jV9w==}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {test_mode: true}
 package_name: Backup_Change_Notes
 allow_embedding: false
 name: Backup Change Notes
