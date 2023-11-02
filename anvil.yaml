@@ -3,7 +3,7 @@ scheduled_tasks:
   time_spec:
     n: 1
     every: day
-    at: {minute: 39, hour: 18}
+    at: {minute: 42, hour: 18}
   job_id: CSEAIMCX
 services:
 - source: /runtime/services/tables.yml
