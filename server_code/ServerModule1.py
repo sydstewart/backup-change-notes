@@ -40,7 +40,7 @@ def make_backup():
      new_file2 = new_folder.create_file(filename2, users_csv)
      new_file3 = new_folder.create_file(filename3, change_id_counter_csv)
      new_file4 = new_folder.create_file(filename4, supported_products_csv)
-     adress ='syd'
+     address ='syd'
      send_email(address)
 
 
@@ -54,5 +54,5 @@ def send_email(address):
     anvil.email.send(
                  from_name = "Change Note Backup", 
                  to = "sydney.w.stewart@gmail.com",
-                 subject = "Change Note Backup Run",
+                 subject = 'Change Note Backup Run' ,
                  text = "Change Note Backup Run!")
