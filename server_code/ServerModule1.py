@@ -54,5 +54,5 @@ def send_email(address):
     anvil.email.send(
                  from_name = "Change Note Backup", 
                  to = "sydney.w.stewart@gmail.com",
-                 subject = 'Change Note Backup Run'' + '_' + str(today),
+                 subject = 'Change Note Backup Run',
                  text = "Change Note Backup Run!")
